@@ -1,8 +1,8 @@
 package pl.hackngo.esn.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 /**
@@ -23,6 +23,14 @@ public class Session {
 
     @Column(nullable = false)
     private Double kworum = 0.5;
+
+    @OneToMany
+    @JoinColumn(name = "session_id")
+    private Collection<Question> questions = new ArrayList<>();
+
+    @ManyToMany
+    @JoinColumn
+    private Collection<User> users;
 
     public Session() {
 
@@ -70,6 +78,26 @@ public class Session {
 
     public void setKworum(Double kworum) {
         this.kworum = kworum;
+    }
+
+    public Collection<Question> getQuestions() {
+        return questions;
+    }
+
+    public void addQuestion(Question question) {
+        this.questions.add(question);
+    }
+
+    public void setQuestions(Collection<Question> questions) {
+        this.questions = questions;
+    }
+
+    public Collection<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Collection<User> users) {
+        this.users = users;
     }
 
     @Override

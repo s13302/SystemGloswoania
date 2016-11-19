@@ -1,10 +1,9 @@
 package pl.hackngo.esn.entity;
 
 import java.util.Arrays;
+import java.util.Collection;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class User {
@@ -17,6 +16,10 @@ public class User {
 
 	@Column(nullable = false)
 	private byte[] password;
+
+	@ManyToMany
+	@JoinColumn
+	private Collection<Question> questions;
 
 	public Long getId() {
 		return id;
@@ -40,6 +43,14 @@ public class User {
 
 	public void setPassword(byte[] password) {
 		this.password = password;
+	}
+
+	public Collection<Question> getQuestions() {
+		return questions;
+	}
+
+	public void setQuestions(Collection<Question> questions) {
+		this.questions = questions;
 	}
 
 	@Override
