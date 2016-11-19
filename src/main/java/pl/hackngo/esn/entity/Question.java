@@ -1,10 +1,9 @@
 package pl.hackngo.esn.entity;
 
+import java.util.Collection;
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Question {
@@ -18,9 +17,13 @@ public class Question {
 	@Column(nullable = false)
 	private String text;
 
-	private int time;
+	private int time = 0;
 
 	private Date startTime;
+
+	@OneToMany
+	@JoinColumn
+	private Collection<Answer> answers;
 
 	public Long getId() {
 		return id;
@@ -60,6 +63,18 @@ public class Question {
 
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
+	}
+
+	public Collection<Answer> getAnswers() {
+		return answers;
+	}
+
+	public void addAnswer(Answer answer) {
+		this.answers.add(answer);
+	}
+
+	public void setAnswers(Collection<Answer> answers) {
+		this.answers = answers;
 	}
 
 	@Override
