@@ -54,7 +54,7 @@ body {
 	margin-top: 10px;
 }
 
-.login input[type=button]{
+.login input[type=submit]{
 	display: inline-block;	
 	height: 35px;
 	background: #fff;

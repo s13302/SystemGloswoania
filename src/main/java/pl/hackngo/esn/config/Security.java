@@ -24,15 +24,20 @@ public class Security extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.
                 authorizeRequests().
+                    antMatchers("/log_user.html", "/css/*", "/img/*").
+                    permitAll().
                 anyRequest().
                     authenticated().
                 and().
                 formLogin().
-                    loginPage("/login").
+                    loginPage("/log_user.html").
+                    loginProcessingUrl("/login").
                     permitAll().
+                    defaultSuccessUrl("/index.html", true).
                 and().
                     logout().
-                    permitAll();
+                    permitAll().
+                and().csrf().disable();
     }
 
     @Autowired
