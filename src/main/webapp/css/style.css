@@ -1,0 +1,97 @@
+body {
+	background-image: url("../img/tlo_op12.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+.header {
+	top: calc(20%);
+	font-size: 36px;
+	font-weight: bold;
+	color: #2E3192;
+	font-family: Cambria, Georgia, serif;
+	text-align: center;
+}
+
+.login{
+	position: absolute;
+	background: #2E3192;
+	border-radius:10px;
+	opacity: 0.7;
+	top: calc(50% - 75px);
+	left: calc(50% - 250px);
+	height: 190px;
+	width: 500px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 480px;
+	height: 50px;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #2E3192;
+	font-family: Cambria, Georgia, serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+
+}
+
+.login input[type=password]{
+	width: 480px;
+	height: 50px;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #2E3192;
+	font-family: Cambria, Georgia, serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	display: inline-block;	
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+	opacity: 0.8;
+
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+	opacity: 0.8;
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
