@@ -16,11 +16,13 @@
 			</div>
 
 			<br>
-			<div class="login">
-					<input type="text" placeholder="username" name="user"><br>
-					<input type="password" placeholder="password" name="password"><br>
-					<input type="button" value="Login to session">
-			</div>
+			<form method="post" action="/login">
+				<div class="login">
+						<input type="text" placeholder="username" name="username"><br>
+						<input type="password" placeholder="password" name="password"><br>
+						<input type="submit" value="Login to session">
+				</div>
+			</form>
 		</div>
   </body>
 </html>

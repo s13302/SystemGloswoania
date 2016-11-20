@@ -9,9 +9,17 @@ module.config(function($routeProvider) {
            templateUrl: 'views/selectSessionId.html',
            controller: 'selectSessionCtrl'
        })
+       .when('/logged', {
+           template: '',
+           controller: 'userCtrl'
+       })
        .when('/session/:qr', {
            templateUrl: 'views/session.html',
            controller: 'sessionCtrl'
        })
-       .otherwise('selectSession');
+       .when('/admin', {
+           templateUrl: 'views/admin/sessions.html',
+           controller: 'adminSessionCtrl'
+       })
+       .otherwise('/logged');
 });
