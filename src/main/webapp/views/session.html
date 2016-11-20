@@ -4,9 +4,18 @@
         <p class="text-center">Sesja rozpoczyna się: {{session.startDate | date}}</p>
     </div>
     <div class="col-md-3" style="margin-top: 5px">
-        <button class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+        <button class="btn btn-default" ng-click="doRefresh()"><span class="glyphicon glyphicon-refresh"></span></button>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-3">Treść pytania</div>
+    <div class="col-md-3">Czas na odpowiedź</div>
+    <div class="col-md-3">Rozpoczęcie</div>
+    <div class="col-md-3">Głosowanie</div>
+</div>
 <div class="row" ng-repeat="question in session.questions">
-
+    <div class="col-md-3">{{question.text}}</div>
+    <div class="col-md-3">{{question.time}}</div>
+    <div class="col-md-3">{{question.startTime | date : 'shortTime'}}</div>
+    <div class="col-md-3">{{question.public}}</div>
 </div>
