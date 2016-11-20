@@ -8,6 +8,8 @@ import pl.hackngo.esn.entity.Session;
  */
 public interface SessionRepository extends Repository<Session, Long> {
 
+    Session findById(Long id);
+
     Session findByQr(String qr);
 
 }

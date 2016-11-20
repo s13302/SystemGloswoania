@@ -1,8 +1,6 @@
 package pl.hackngo.esn.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Answer {
@@ -12,6 +10,10 @@ public class Answer {
 
 	@Column(nullable = false)
 	private String text;
+
+	@JoinColumn
+	@ManyToOne
+	private Question question;
 
 	public Long getId() {
 		return id;
@@ -27,6 +29,14 @@ public class Answer {
 
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	public Question getQuestion() {
+		return question;
+	}
+
+	public void setQuestion(Question question) {
+		this.question = question;
 	}
 
 	@Override

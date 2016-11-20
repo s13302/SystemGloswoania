@@ -14,7 +14,7 @@ public class Session {
     @Id
     private Long id;
 
-    @Column(nullable = false)
+    @Column(unique = true, nullable = false)
     private String qr;
 
     private String nazwa;

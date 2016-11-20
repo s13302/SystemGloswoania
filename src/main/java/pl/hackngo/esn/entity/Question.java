@@ -25,6 +25,10 @@ public class Question {
 	@JoinColumn
 	private Collection<Answer> answers;
 
+	@ManyToOne
+	@JoinColumn
+	private Session session;
+
 	public Long getId() {
 		return id;
 	}
@@ -75,6 +79,14 @@ public class Question {
 
 	public void setAnswers(Collection<Answer> answers) {
 		this.answers = answers;
+	}
+
+	public Session getSession() {
+		return session;
+	}
+
+	public void setSession(Session session) {
+		this.session = session;
 	}
 
 	@Override
