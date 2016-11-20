@@ -4,10 +4,13 @@
 angular.module('glosowanie').controller('sessionCtrl', function (Session, $routeParams, $scope) {
 
     var qrCode = $routeParams.qr;
-    Session.get({
-        qr: qrCode
-    }, function (data) {
-        $scope.session = data;
-    })
+    $scope.doRefresh = function () {
+        Session.get({
+            qr: qrCode
+        }, function (data) {
+            $scope.session = data;
+        });
+    };
+    $scope.doRefresh();
 
 });
