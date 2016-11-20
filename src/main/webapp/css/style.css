@@ -14,7 +14,6 @@
 
 body{
 	background: url("../img/tlo_op12.png") no-repeat scroll center;
-
 }
 html {
 	 height: 100%;
@@ -39,6 +38,7 @@ html {
 	padding: 1% 1% 1% 1%;
 	width: 100%;
 	text-align: center;
+
 
 }
 
@@ -79,6 +79,7 @@ html {
 
 .login input[type=submit]{
     position: absolute;
+	width: 20%;
 	background: #fff;
 	border: 2px solid rgba(108, 111, 118, 0.6);
 	cursor: pointer;
@@ -89,6 +90,7 @@ html {
     margin-top: 2%;
     margin-left:auto;
     margin-right:auto;
+
     left:0;
     right:0;
 }
@@ -118,275 +120,6 @@ html {
 	outline: none;
 }
 
-
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-	aside,
-	.header {
-	width: 90%;
-	font-size: 7vw;
-	}
-	.login {
-	width: 90%;
-	height: 25%;
-	}
-
-	.login input[type=submit] {
-	float: right;
-
-	}
-
-
-}
-
-/* Portrait */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
-
-/* Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-
-}
-
-
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-
-}
-
-/* Portrait */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
-
-/* Landscape */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-
-}
-
-
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
-
-/* Portrait */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
-
-/* Landscape */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
-
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
-
-/* Portrait */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
-
-/* Landscape */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
-	aside,
-	.header {
-		width: 90%;
-		font-size: 7vw;
-	}
-	.login {
-		width: 90%;
-		height: 25%;
-	}
-
-	.login input[type=submit] {
-		float: right;
-
-	}
-}
 
 
 
