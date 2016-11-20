@@ -15,7 +15,7 @@ public class Session {
     private Long id;
 
     @Column(nullable = false)
-    private String QR;
+    private String qr;
 
     private String nazwa;
 
@@ -48,12 +48,12 @@ public class Session {
         this.id = id;
     }
 
-    public String getQR() {
-        return QR;
+    public String getQr() {
+        return qr;
     }
 
-    public void setQR(String QR) {
-        this.QR = QR;
+    public void setQr(String QR) {
+        this.qr = QR;
     }
 
     public String getNazwa() {
@@ -104,7 +104,7 @@ public class Session {
     public String toString() {
         return "Session{" +
                 "id=" + id +
-                ", QR='" + QR + '\'' +
+                ", qr='" + qr + '\'' +
                 ", nazwa='" + nazwa + '\'' +
                 ", startDate=" + startDate +
                 ", kworum=" + kworum +
