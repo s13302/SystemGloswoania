@@ -3,6 +3,10 @@
 	src: url('../fonts/magdaclean-regular.ttf');
 }
 
+.full-width {
+	width: 100%;
+}
+
 .container {
 	width: 100%;
 

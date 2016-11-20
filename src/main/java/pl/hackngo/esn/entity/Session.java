@@ -1,5 +1,7 @@
 package pl.hackngo.esn.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -26,10 +28,12 @@ public class Session {
 
     @OneToMany
     @JoinColumn(name = "session_id")
+    @JsonIgnore
     private Collection<Question> questions = new ArrayList<>();
 
     @ManyToMany
     @JoinColumn
+    @JsonIgnore
     private Collection<User> users;
 
     public Session() {

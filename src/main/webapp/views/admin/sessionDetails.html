@@ -1,0 +1,32 @@
+<div class="row">
+    <form ng-sumbmit="save()">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Nazwa</label>
+                <input class="form-control" type="text" placeholder="Nazwa" ng-value="session.nazwa" />
+            </div>
+            <div class="form-group">
+                <label>QR</label>
+                <input class="form-control" type="text" placeholder="QR" ng-value="session.qr" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Data i Godzina Rozpoczęcia</label>
+                <input class="form-control" type="text" placeholder="Data Rozpoczęcia" ng-value="session.startDate | date : 'medium'" />
+            </div>
+            <div class="form-group">
+                <label>Kworum</label>
+                <input class="form-control" type="text" placeholder="Kworum" ng-value="session.kworum" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#/admin" class="form-control btn btn-danger" type="submit"><span class="glyphicon glyphicon-triangle-left"></span></a>
+            </div>
+            <div class="col-md-8">
+                <button class="form-control btn btn-primary" type="submit">Zapisz</button>
+            </div>
+        </div>
+    </form>
+</div>

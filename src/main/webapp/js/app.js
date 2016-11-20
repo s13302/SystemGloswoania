@@ -21,5 +21,9 @@ module.config(function($routeProvider) {
            templateUrl: 'views/admin/sessions.html',
            controller: 'adminSessionCtrl'
        })
+       .when('/admin/session/:sessionId?', {
+           templateUrl: 'views/admin/sessionDetails.html',
+           controller: 'sessionDetailsCtrl'
+       })
        .otherwise('/logged');
 });
