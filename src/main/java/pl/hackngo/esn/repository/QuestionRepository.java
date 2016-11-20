@@ -9,6 +9,8 @@ import java.util.Collection;
 
 public interface QuestionRepository extends Repository<Question, Long> {
 
+	Collection<Question> findAll();
+
 	Question findById(Long id);
 
 	Collection<Question> findBySession(Session session);

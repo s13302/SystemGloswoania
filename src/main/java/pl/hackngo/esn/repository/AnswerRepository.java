@@ -11,8 +11,12 @@ import java.util.Collection;
  */
 public interface AnswerRepository extends Repository<Answer, Long> {
 
+    Collection<Answer> findAll();
+
     Answer findById(Long id);
 
     Collection<Answer> findByQuestion(Question question);
+
+    Answer save(Answer answer);
 
 }

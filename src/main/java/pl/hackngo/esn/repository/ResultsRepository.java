@@ -12,10 +12,14 @@ import java.util.Collection;
  */
 public interface ResultsRepository extends Repository<Results, Long> {
 
+    Collection<Results> findAll();
+
     Results findById(Long id);
 
     Collection<Results> findByUser(User user);
 
     Collection<Results> findByAnswer(Answer answer);
+
+    Results save(Results results);
 
 }
