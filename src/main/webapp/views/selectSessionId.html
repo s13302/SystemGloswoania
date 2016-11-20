@@ -1,11 +1,25 @@
-<form ng-submit="submit()">
-    <div class="col-md-offset-4 col-md-4">
-        <h1>Zaloguj do sesji</h1>
-    </div>
-    <div class="col-md-offset-4 col-md-4">
-        <input class="form-control" placeholder="ID Sesji" type="text" ng-model="sessionId" />
-    </div>
-    <div class="col-md-offset-4 col-md-4 text-center">
-        <button class="btn btn-default" type="submit">Zaloguj</button>
-    </div>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <title>Zaloguj się do sesji</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    `
+
+</head>
+<body>
+<div id="containerSign">
+    <form ng-submit="submit()">
+        <div class="header2">
+            <h1>Zaloguj do sesji</h1>
+        </div>
+
+        <div class="signin">
+            <input class="form-control" placeholder="ID Sesji" type="text" ng-model="sessionId"/>
+            <button class="buttonPadded" type="submit">Zaloguj</button>
+        </div>
+    </form>
+</div>
+</body>
