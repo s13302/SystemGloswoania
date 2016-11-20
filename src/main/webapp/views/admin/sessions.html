@@ -1,1 +1,4 @@
-<h1>Admin sessions</h1>
+<div class="col-md-offset-4 col-md-4">
+    <h3 class="text-center">Wybierz Sessję</h3><a class="btn btn-primary" href="#/admin/session"><span class="glyphicon glyphicon-plus"></span></a>
+    <a class="btn btn-default full-width" ng-repeat="session in sessions" ng-href="#/admin/session/{{session.id}}">{{session.nazwa}}</a>
+</div>
