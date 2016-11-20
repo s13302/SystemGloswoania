@@ -4,9 +4,9 @@
 /**
  * Created by rpi on 19.11.16.
  */
-angular.module('glosowanie').controller('adminSessionCtrl', function (Session, $scope) {
+angular.module('glosowanie').controller('adminSessionCtrl', function (Question, $scope) {
 
-    Session.query(function (result) {
+    Question.query(function (result) {
         $scope.question = result;
     });
 
