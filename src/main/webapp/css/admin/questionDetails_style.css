@@ -27,38 +27,9 @@ html {
 
     font-size: 36px;
     color: #fff;
-    background-color: #7AC143;
+    background-color: #F47B20;
     font-family: 'MagdaClean-Regular';
     text-align: center;
     margin-bottom: 2%;
 
 }
-
-.return_button {
-    text-align: right;
-    float:left;
-
-}
-
-.question_button {
-    float: right;
-    text-align: left;
-    margin-right:1%;
-    color: #2E3192;
-}
-
-.save_button {
-    float:right;
-    text-align: right;
-}
-
-.logoutDiv{
-    text-align: right;
-    padding: 1% 5%;
-}
-
-a {
-
-}
-
-

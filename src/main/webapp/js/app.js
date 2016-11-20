@@ -25,5 +25,14 @@ module.config(function($routeProvider) {
            templateUrl: 'views/admin/sessionDetails.html',
            controller: 'sessionDetailsCtrl'
        })
+       .when('/admin/question', {
+           templateUrl: 'views/admin/questions.html',
+           controller: 'adminQuestionCtrl'
+       })
+
+       .when('/admin/question/:questionId?', {
+           templateUrl: 'views/admin/questionDetails.html',
+           controller: 'questionDetailsCtrl'
+       })
        .otherwise('/logged');
 });

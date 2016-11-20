@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sessions</title>
+    <meta charset="utf-8"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin/session_style.css">
+</head>
+<body>
+<div id="container">
+    <div class="header">
+        <div class="text-center">.WYBIERZ PYTANIE</div></div>
+    <div class="col-md-offset-4 col-md-4">
+
+        <div class="edit_button"><a class="btn btn-default full-width" ng-repeat="session in sessions" ng-href="#/admin/question/{{question.id}}">{{question.nazwa}}</a></div>
+        <div class="dodaj_button"><a class="btn btn-primary" href="#/admin/question">
+            Utwórz pytanie</a></div>
+    </div>
+</div>
+</body>
