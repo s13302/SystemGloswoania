@@ -24,7 +24,7 @@ public class Security extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.
                 authorizeRequests().
-                    antMatchers("/log_user.html", "/css/*", "/img/*").
+                    antMatchers("/log_user.html", "/css/*", "/img/*", "/fonts/*").
                     permitAll().
                 anyRequest().
                     authenticated().
