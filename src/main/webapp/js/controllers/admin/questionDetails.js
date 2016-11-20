@@ -4,7 +4,7 @@
 /**
  * Created by rpi on 19.11.16.
  */
-angular.module('glosowanie').controller('questionDetailsCtrl', function (Question, $routeParams, $scope, $location) {
+angular.module('glosowanie').controller('questionDetails', function (Question, $routeParams, $scope, $location) {
 
     if ($routeParams.questionId !== undefined) {
         Question.get({id: $routeParams.questionId}, function (data) {

@@ -27,7 +27,7 @@ module.config(function($routeProvider) {
        })
        .when('/admin/question', {
            templateUrl: 'views/admin/questions.html',
-           controller: 'questionCtrl'
+           controller: 'adminQuestionCtrl'
        })
 
        .when('/admin/question/:questionId?', {
