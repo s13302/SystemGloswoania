@@ -34,8 +34,12 @@ public class SessionService {
     }
 
     public Session update(Long id, Session session) {
-        session.setId(id);
-        return sessionRepository.save(session);
+        Session dbSession = loadById(id);
+        dbSession.setNazwa(session.getNazwa());
+        dbSession.setKworum(session.getKworum());
+        dbSession.setQr(session.getQr());
+        dbSession.setStartDate(session.getStartDate());
+        return sessionRepository.save(dbSession);
     }
 
 }

@@ -1,5 +1,6 @@
 package pl.hackngo.esn.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -14,6 +15,7 @@ import java.util.Date;
 public class Session {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(unique = true, nullable = false)
@@ -21,6 +23,8 @@ public class Session {
 
     private String nazwa;
 
+    @Temporal(TemporalType.TIMESTAMP)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "PL")
     private Date startDate;
 
     @Column(nullable = false)

@@ -7,6 +7,7 @@ import java.util.Collection;
 public class Results {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
 	@ManyToOne

@@ -24,9 +24,9 @@ public class SessionCtrl {
         return sessionService.loadAll();
     }
 
-    @RequestMapping(value = "/{qr}", method = RequestMethod.GET)
-    public @ResponseBody Session getSession(@PathVariable String qr) {
-        return sessionService.loadByQr(qr);
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public @ResponseBody Session loadById(@PathVariable Long id) {
+        return sessionService.loadById(id);
     }
 
     @RequestMapping(method = RequestMethod.POST)

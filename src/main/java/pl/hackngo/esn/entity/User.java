@@ -13,6 +13,7 @@ import javax.persistence.*;
 public class User implements UserDetails {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
 	@Column(nullable = false)
