@@ -10,7 +10,6 @@ import pl.hackngo.esn.repository.UserRepository;
 /**
  * Created by rpi on 19.11.16.
  */
-@Service
 public class UserDetailService implements UserDetailsService {
 
     @Autowired
